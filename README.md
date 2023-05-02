@@ -30,20 +30,18 @@ I recently had a technical challenge where fixing errors in this Noughts & Cross
 - Ensure a user cannot change squares where an `X` or `O` is present (_02/05_)
 - Minor styling updates (_02/05_)
 - Add meta information for accessibility (_02/05_)
-
-In Progress ...
+- Build webpage (_02/05_)
 
 ## Features
 
-- In Progress
-
-To-do list:
-
-- Design the webpage
+- Noughts and Crosses game with
+  - Accessible design
+  - Game ending with winner
+  - Grid squares are locked after entering changes (`X`/ `O`)
 
 ## Status
 
-Project is: _in progress_
+Project is: _conpleted_
 
 ## Contact
 
