@@ -9,7 +9,6 @@ export default function Board(props) {
   const [winner, setWinner] = useState(false);
 
   useEffect(() => {
-    console.log({ turn });
     const gameOver = check();
     if (gameOver) {
       setWinner(turn === "X" ? "O" : "X");
@@ -62,7 +61,7 @@ export default function Board(props) {
   );
 
   return (
-    <div>
+    <article>
       {board.map((value, index) => {
         if (index % 3 === 0) {
           return (
@@ -72,7 +71,7 @@ export default function Board(props) {
                 key={index}
                 value={value}
                 onClick={() => {
-                  if (!winner) {
+                  if (!winner && value !== "X" && value !== "O") {
                     updateSquare(index);
                   }
                 }}
@@ -85,7 +84,8 @@ export default function Board(props) {
             key={index}
             value={value}
             onClick={() => {
-              if (!winner) {
+              console.log(value);
+              if (!winner && value !== "X" && value !== "O") {
                 updateSquare(index);
               }
             }}
@@ -93,16 +93,17 @@ export default function Board(props) {
         );
       })}
       <br />
-      {winner && winner + " wins"}
+      {winner && <h4 className="winner">{winner} wins</h4>}
       <br />
 
       <button
+        className="reset"
         onClick={() => {
           setBoard(initialBoardState);
         }}
       >
-        Reset
+        Reset Board
       </button>
-    </div>
+    </article>
   );
 }

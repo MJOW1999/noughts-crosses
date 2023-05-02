@@ -10,7 +10,11 @@ export default function App() {
   return (
     <>
       <h2>Noughts & Crosses</h2>
-      {xturn ? "X's " : "O's"} Turn
+      {xturn ? (
+        <h3 className="turn">X's Turn</h3>
+      ) : (
+        <h3 className="turn">O's Turn</h3>
+      )}
       <Board turn={xturn ? "X" : "O"} updateTurn={updateTurn} />
     </>
   );

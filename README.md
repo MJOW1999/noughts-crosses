@@ -24,9 +24,11 @@ I recently had a technical challenge where fixing errors in this Noughts & Cross
 
 ## Process
 
-- Set up files
-- Fix error around the wrong winner being announced
--
+- Set up files (_02/05_)
+- Fix error around the wrong winner being announced (_02/05_)
+- Ensure user can't update squares when a winner is found (_02/05_)
+- Ensure a user cannot change squares where an `X` or `O` is present (_02/05_)
+- Minor styling updates (_02/05_)
 
 In Progress ...
 
