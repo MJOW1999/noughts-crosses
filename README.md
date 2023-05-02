@@ -30,7 +30,7 @@ I recently had a technical challenge where fixing errors in this Noughts & Cross
 - Ensure a user cannot change squares where an `X` or `O` is present (_02/05_)
 - Minor styling updates (_02/05_)
 - Add meta information for accessibility (_02/05_)
-- Build webpage (_02/05_)
+- Deploy webpage on [Netlify](https://noughts-crosses123.netlify.app/) (_02/05_)
 
 ## Features
 
@@ -41,7 +41,7 @@ I recently had a technical challenge where fixing errors in this Noughts & Cross
 
 ## Status
 
-Project is: _conpleted_
+Project is: **Completed**
 
 ## Contact
 
